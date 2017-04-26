@@ -42,6 +42,16 @@
             "powerOn": "http://localhost:81/green_req_php_proc.php",
             "powerOff": "http://localhost:81/green_pwn_off_php_proc.php"
             }
-    ,}
+    },
+    {
+    "accessory": "Computer",
+    "name": "Desk PC",
+    "mac": "C4:E9:84:03:8A:0B",
+    "ip": "10.0.0.13",
+    "pingInterval": 45,
+    "wakeGraceTime": 90,
+    "shutdownGraceTime": 15,
+    "shutdownCommand": "ssh stixx `./home/fonix/sleep.sh`"
+  },
 ]
 }
