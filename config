@@ -1,0 +1,47 @@
+{
+    "bridge": {
+        "name": "FonixPI",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+
+"accessories": [
+    {
+        "accessory": "HTTP-RGB",
+        "name": "Red Lights",
+
+        "switch": {
+            "powerOn": "http://localhost:81/red_req_php_proc.php",
+            "powerOff": "http://localhost:81/red_pwn_off_php_proc.php"
+        }
+    },
+    {
+        "accessory": "HTTP-RGB",
+        "name": "Blue Lights",
+
+        "switch": {
+            "powerOn": "http://localhost:81/blue_req_php_proc.php",
+            "powerOff": "http://localhost:81/blue_pwn_off_php_proc.php"
+        }
+    },
+    {
+        "accessory": "HTTP-RGB",
+        "name": "White Lights",
+
+        "switch": {
+            "powerOn": "http://localhost:81/white_req_php_proc.php",
+            "powerOff": "http://localhost:81/white_pwn_off_php_proc.php"
+        }
+    },
+    {
+        "accessory": "HTTP-RGB",
+        "name": "Green Lights",
+
+        "switch": {
+            "powerOn": "http://localhost:81/green_req_php_proc.php",
+            "powerOff": "http://localhost:81/green_pwn_off_php_proc.php"
+            }
+    ,}
+]
+}
