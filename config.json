@@ -3,7 +3,8 @@
         "name": "LS1Bridge",
         "username": "CC:22:3D:E3:CE:30",
         "port": 51826,
-        "pin": "031-45-154"
+        "pin": "031-45-154",
+	"ssdp": 1900
     },
 
 "accessories": [
@@ -54,24 +55,6 @@
     "shutdownCommand": "ssh stixx `./home/fonix/sleep.sh`"
   },
     {
-        "accessory": "HTTP-RGB",
-        "name": "RGB Led Strip",
-
-        "switch": {
-            "powerOn": "http://10.0.0.8/api/v1/on",
-            "powerOff": "http://10.0.0.8/api/v1/off"
-        },
-
-        "brightness": {
-            "url": "http://10.0.0.8/api/v1/brightness/%s"
-        },
-
-        "color": {
-            "status": "http://10.0.0.8/api/v1/set",
-            "brightness": true
-        }
-    },
-    {
         "accessory": "HttpMultiswitch",
         "switch_type": "Switch",
         "name": "Projector",
@@ -106,6 +89,6 @@
         "base_url": "http://10.0.0.3",
         "on_url": "/switchon?socket=4",
         "off_url": "/switchoff?socket=4"
-    }
+    } 
 ]
 }
