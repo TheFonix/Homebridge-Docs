@@ -106,13 +106,6 @@
         "base_url": "http://10.0.0.3",
         "on_url": "/switchon?socket=4",
         "off_url": "/switchoff?socket=4"
-    },
-    {
-  "accessory": "dyson-coollink",
-  "name": "Purifier Cool Tower",
-  "ip": "10.0.0.2",
-  "username": "NC8-UK-HCA3635A",
-  "password": "JAXB++3lIT2OJHRvA+qWSCIseZ2GVG+hOduAjz/NAC3Lki+1hYQwuEWWQ8tcOPcM0mxntBkCsoM39VSB9KU8ZA=="
-  }
+    }
 ]
 }
