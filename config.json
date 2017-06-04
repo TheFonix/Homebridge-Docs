@@ -1,79 +1,101 @@
 {
-	"bridge": {
-		"name": "LS1Bridge",
-		"username": "CC:22:3D:E3:CE:30",
-		"port": 51826,
-		"pin": "031-45-154",
-		"ssdp": 1900
-	},
-	"accessories": [{
-		"accessory": "HTTP-RGB",
-		"name": "Red Lights",
-		"switch": {
-			"powerOn": "http://10.0.0.8:81/red_req_php_proc.php",
-			"powerOff": "http://10.0.0.8:81/red_pwn_off_php_proc.php"
-		}
-	}, {
-		"accessory": "HTTP-RGB",
-		"name": "Blue Lights",
-		"switch": {
-			"powerOn": "http://10.0.0.8:81/blue_req_php_proc.php",
-			"powerOff": "http://10.0.0.8:81/blue_pwn_off_php_proc.php"
-		}
-	}, {
-		"accessory": "HTTP-RGB",
-		"name": "White Lights",
-		"switch": {
-			"powerOn": "http://10.0.0.8:81/white_req_php_proc.php",
-			"powerOff": "http://10.0.0.8:81/white_pwn_off_php_proc.php"
-		}
-	}, {
-		"accessory": "HTTP-RGB",
-		"name": "Green Lights",
-		"switch": {
-			"powerOn": "http://10.0.0.8:81/green_req_php_proc.php",
-			"powerOff": "http://10.0.0.8:81/green_pwn_off_php_proc.php"
-		}
-	}, {
-		"accessory": "Computer",
-		"name": "Desk PC",
-		"mac": "C4:E9:84:03:8A:0B",
-		"ip": "10.0.0.13",
-		"pingInterval": 5,
-		"wakeGraceTime": 90,
-		"shutdownGraceTime": 15,
-		"shutdownCommand": "ssh stixx `./home/fonix/sleep.sh`"
-	}, {
-		"accessory": "HttpMultiswitch",
-		"switch_type": "Switch",
-		"name": "Projector",
-		"http_method": "GET",
-		"base_url": "http://10.0.0.3",
-		"on_url": "/switchon?socket=1",
-		"off_url": "/switchoff?socket=1"
-	}, {
-		"accessory": "HttpMultiswitch",
-		"switch_type": "Switch",
-		"name": "Sound System",
-		"http_method": "GET",
-		"base_url": "http://10.0.0.3",
-		"on_url": "/switchon?socket=2",
-		"off_url": "/switchoff?socket=2"
-	}, {
-		"accessory": "HttpMultiswitch",
-		"switch_type": "Switch",
-		"name": "Vivarium",
-		"http_method": "GET",
-		"base_url": "http://10.0.0.3",
-		"on_url": "/switchon?socket=3",
-		"off_url": "/switchoff?socket=3"
-	}, {
-		"accessory": "HttpMultiswitch",
-		"switch_type": "Switch",
-		"name": "Desk",
-		"http_method": "GET",
-		"base_url": "http://10.0.0.3",
-		"on_url": "/switchon?socket=4",
-		"off_url": "/switchoff?socket=4"
-	}]
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "011-11-384"
+    },
+"accessories": [
+    {
+        "accessory": "HTTP-RGB",
+        "name": "Red Lights",
+
+        "switch": {
+            "powerOn": "http://10.0.0.8:81/red_req_php_proc.php",
+            "powerOff": "http://10.0.0.8:81/red_pwn_off_php_proc.php"
+        }
+    },
+    {
+        "accessory": "HTTP-RGB",
+        "name": "Blue Lights",
+
+        "switch": {
+            "powerOn": "http://10.0.0.8:81/blue_req_php_proc.php",
+            "powerOff": "http://10.0.0.8:81/blue_pwn_off_php_proc.php"
+        }
+    },
+    {
+        "accessory": "HTTP-RGB",
+        "name": "White Lights",
+
+        "switch": {
+            "powerOn": "http://10.0.0.8:81/white_req_php_proc.php",
+            "powerOff": "http://10.0.0.8:81/white_pwn_off_php_proc.php"
+        }
+    },
+    {
+        "accessory": "HTTP-RGB",
+        "name": "Green Lights",
+
+        "switch": {
+            "powerOn": "http://10.0.0.8:81/green_req_php_proc.php",
+            "powerOff": "http://10.0.0.8:81/green_pwn_off_php_proc.php"
+            }
+    },
+    {
+        "accessory": "HTTP-RGB",
+        "name": "Purple Lights",
+
+        "switch": {
+            "powerOn": "http://10.0.0.8:81/purple_req_php_proc.php",
+            "powerOff": "http://10.0.0.8:81/purple_pwn_off_php_proc.php"
+            }
+    },
+    {
+    "accessory": "Computer",
+    "name": "Desk PC",
+    "mac": "C4:E9:84:03:8A:0B",
+    "ip": "10.0.0.35",
+    "pingInterval": 5,
+    "wakeGraceTime": 90,
+    "shutdownGraceTime": 15,
+    "shutdownCommand": "ssh stixx `./home/fonix/sleep.sh`"
+  },
+    {
+        "accessory": "HttpMultiswitch",
+        "switch_type": "Switch",
+        "name": "Projector",
+        "http_method": "GET",
+        "base_url": "http://pi-b",
+        "on_url": "/switchon?socket=1",
+        "off_url": "/switchoff?socket=1"
+    },
+    {
+        "accessory": "HttpMultiswitch",
+        "switch_type": "Switch",
+        "name": "Sound System",
+        "http_method": "GET",
+        "base_url": "http://pi-b",
+        "on_url": "/switchon?socket=2",
+        "off_url": "/switchoff?socket=2"
+    },
+    {
+        "accessory": "HttpMultiswitch",
+        "switch_type": "Switch",
+        "name": "Wolf Light",
+        "http_method": "GET",
+        "base_url": "http://pi-b",
+        "on_url": "/switchon?socket=3",
+        "off_url": "/switchoff?socket=3"
+    }
+],
+    "platforms": [
+        {
+  "platform": "mqtt",
+  "name": "mqtt",
+  "url": "mqtt://mqtt-broker",
+  "topic_type": "multiple",
+  "topic_prefix": "homebridge"
+        }
+    ]
 }
