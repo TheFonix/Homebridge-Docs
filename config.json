@@ -120,14 +120,5 @@
             "shutdownGraceTime": 15,
             "shutdownCommand": "ssh strixx `bash /home/fonix/sleep.sh`"
         }
-    ],
-    "platforms": [{
-        "platform": "mqtt",
-        "name": "mqtt",
-        "url": "mqtt://10.0.0.30",
-        "topic_type": "multiple",
-        "topic_prefix": "469",
-        "username": "#",
-        "password": "#"
-    }]
+    ]
 }
